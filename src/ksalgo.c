@@ -26,14 +26,14 @@ void ksalgo_init_note(KsalgoNote *note)
 }
 
 
-void ksalgo_start_note(KsalgoNote *note, float frequency, float decay)
+void ksalgo_start_note(KsalgoNote *note, float frequency, float decay, int buffer_multiplier, int sample_rate)
 {
         int buff_index;
 
         if (note->active == true)
                 return;
 
-        note->buffer_size = (int)(SAMPLE_RATE / frequency) * 2;
+        note->buffer_size = (int)(sample_rate / frequency) * buffer_multiplier;
         note->buffer = realloc(note->buffer, note->buffer_size * sizeof(float));
 
         for (buff_index = 0; buff_index < note->buffer_size; buff_index++) {
