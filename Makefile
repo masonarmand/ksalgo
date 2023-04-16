@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -O2 -std=c89 -I./include
+CFLAGS = -Wall -Wextra -O2 -std=c89 -I./include -lm
 AR = ar
 
 LIBRARY = libksalgo.a

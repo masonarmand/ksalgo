@@ -1,3 +1,12 @@
+/*
+ * File: ksalgo.h
+ * --------------
+ * ksalgo is a lightweight C library that implements the Karplus-Strong algorithm for generating plucked string sounds.
+ * Original Author: Mason Armand
+ * Date Created: Apr 15, 2023
+ * Last Modified: Apr 16, 2023
+ */
+
 #ifndef KSALGO_H
 #define KSALGO_H
 
